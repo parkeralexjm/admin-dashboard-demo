@@ -1,11 +1,64 @@
 .container {
   display: grid;
-  grid: repeat(3, 1fr) / 1fr 2fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 2 1fr;
+  grid-template-rows: 75px 1fr 1fr;
+  height: 95vh;
+  width: 95vw;
 }
 
 .container > div {
   background-color: aquamarine;
-  padding: 1rem;
   border: 2px solid black;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 4 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr 1fr;
+}
+
+.branding {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.searchbar {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#searchButton {
+  border: 0px;
+  background: none;
+  color: black;
+}
+
+.user {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.greeting {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.inputs {
+  grid-area: 2 / 3 / 2 / 3;
+}
+
+.projects {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.announcements {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.trending {
+  grid-area: 3 / 4 / 4 / 5;
 }
