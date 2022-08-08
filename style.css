@@ -222,6 +222,8 @@
   padding: 5px;
   text-align: start;
   border-left: 3px solid goldenrod;
+  display: flex;
+  flex-direction: column;
 }
 
 .trendingGrid > div {
@@ -230,4 +232,30 @@
 
 .trending {
   grid-area: 3 / 4 / 4 / 5;
+}
+
+.projectsTitle,
+.announcementsTitle,
+.trendingTitle {
+  font-weight: bold;
+  padding: 2% 0 0 2%;
+  margin: 0;
+}
+
+.content {
+  font-size: 0.9rem;
+  padding: 2%;
+  margin: 0;
+}
+
+.projectFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectFlex > i {
+  margin-top: auto;
+  align-self: flex-end;
+  width: 20px;
+  height: 20px;
 }
